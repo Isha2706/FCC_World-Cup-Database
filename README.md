@@ -35,3 +35,25 @@ This hands-on project is a great way to learn database normalization, SQL querie
 ```bash
 git clone https://github.com/Isha2706/FCC_World-Cup-Database.git
 cd FCC_World-Cup-Database
+```
+
+### 2. Create the PostgreSQL database
+
+```bash
+psql -U postgres
+CREATE DATABASE worldcup;
+\c worldcup
+\i worldcup.sql
+```
+
+### 3. Insert the data
+
+```bash
+./insert_data.sh
+```
+
+### 4. Run queries
+
+```bash
+psql -d worldcup -f queries.sh
+```
